@@ -13,9 +13,8 @@ server {
             proxy_cache_bypass $http_upgrade;
     }
 
-   # SSL settings
-   ssl_verify_client on;
-   ssl_certificate /etc/nginx/certs/cert.pem;
-   ssl_certificate_key /etc/nginx/certs/key.pem;
-
+    # SSL settings
+    ssl_verify_client on;
+    ssl_certificate /etc/nginx/certs/cert.pem;
+    ssl_certificate_key /etc/nginx/certs/key.pem;
 }
