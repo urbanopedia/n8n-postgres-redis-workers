@@ -78,14 +78,10 @@ services:
     <<: *shared
     image: n8nio/n8n
     command: worker
-    depends_on:
-      - n8n
-      - n8n
+  
 
   n8n-worker-2:
     <<: *shared
     image: n8nio/n8n
     command: worker
-    depends_on:
-      - n8n
-      - n8n
+   
